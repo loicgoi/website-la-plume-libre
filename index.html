@@ -9,24 +9,59 @@
 <body>
   <header>
     <h1>La Plume Libre</h1>
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="about.html">À propos</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <p>Votre librairie locale, depuis 1982</p>
   </header>
 
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="about.html">À propos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
   <main>
-    <section>
-      <h2>Bienvenue sur La Plume Libre</h2>
-      <p>Un espace dédié à l'expression libre et créative.</p>
-    </section>
+    <div class="intro">
+      <h2>Bienvenue à la librairie</h2>
+      <p>Découvrez un univers littéraire chaleureux et inspirant. Romans, essais, jeunesse, bandes dessinées : un large choix pour tous les lecteurs. Nos libraires passionnés vous accueillent avec plaisir !</p>
+      <a href="contact.html" class="btn">Nous contacter</a>
+    </div>
+    <div class="search">
+      <h2>Rechercher un livre</h2>
+      <form id="search-form" novalidate>
+        <input type="text" id="search-input" placeholder="Entrez le titre ou l'auteur" required>
+        <button type="submit" class="btn">Rechercher</button>
+      </form>
+      <p id="search-result" style="color: var(--accent); margin-top: 1rem; display:none;">Aucun résultat trouvé.</p>
+    </div>
+    <div class="highlights">
+      <h2>Nos coups de cœur</h2>
+      <div class="book-list">
+        <article class="book-item">
+          <img src="img/madalyn-cox-O7ygzpAL4Mc-unsplash.jpg" alt="Titre du livre 1">
+          <h3>The Two Towers</h3>
+          <p>Auteur : J.R.R Tolkiens</p>
+        </article>
+        <article class="book-item">
+          <img src="img/thought-catalog-DxAzOKSiPoE-unsplash.jpg" alt="Titre du livre 2">
+          <h3>Titre du livre 2</h3>
+          <p>Auteur : Auteur 2</p>
+        </article>
+        <article class="book-item">
+          <img src="img/sincerely-media-CXYPfveiuis-unsplash.jpg" alt="Titre du livre 3">
+          <h3>Titre du livre 3</h3>
+          <p>Auteur : Auteur 3</p>
+        </article>
+        <article class="book-item">
+          <img src="img/tim-alex-xG5VJW-7Bio-unsplash.jpg" alt="Titre du livre 3">
+          <h3>Titre du livre 3</h3>
+          <p>Auteur : Auteur 3</p>
+        </article>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 La Plume Libre. Tous droits réservés.</p>
+    <p>&copy; 2025 La Plume Libre – Tous droits réservés</p>
   </footer>
-
   <script src="js/script.js"></script>
 </body>
 </html>

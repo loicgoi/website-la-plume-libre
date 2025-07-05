@@ -1,3 +1,4 @@
+/* Déclaration des variables CSS */
 :root {
   --fond: #fdf6e3;
   --texte: #2e2e2e;
@@ -7,18 +8,21 @@
   --border-radius: 6px;
 }
 
+/* Reset du margin et padding global */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Mise en forme globale */
 body {
   font-family: 'Georgia', serif;
   background-color: var(--fond);
   color: var(--texte);
 }
 
+/* Styles pour l'en-tête, la navigation et le contenu principal */
 header {
   background-color: var(--fond);
   border-bottom: 2px solid var(--accent);
@@ -56,6 +60,7 @@ nav a:hover {
   color: var(--bouton);
 }
 
+/* Mise en forme du contenu principal */
 main {
   display: flex;
   flex-direction: row;
@@ -66,6 +71,7 @@ main {
   background-color: var(--secondaire);
 }
 
+/* Sections d'introduction, de recherche et de mises en avant */
 .intro {
   flex: 1 1 300px;
   max-width: 600px;
@@ -184,6 +190,7 @@ main {
   color: #555;
 }
 
+/* Mise en forme des boutons */
 .btn {
   display: inline-block;
   margin-top: 1.5rem;
@@ -204,6 +211,7 @@ main {
   background-color: var(--accent);
 }
 
+/* Mise en forme du pied de page */
 footer {
   background-color: var(--fond);
   border-top: 1px solid var(--accent);
@@ -212,6 +220,7 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Mise en forme du formulaire de contact */
 #contact-form {
   display: flex;
   flex-direction: column;
@@ -220,9 +229,8 @@ footer {
   margin: 10px auto;
   background-color: white;
   padding: 2rem;
-  border-left: 5px solid var(--accent);
   border-radius: var(--border-radius);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
@@ -254,7 +262,7 @@ footer {
 #contact-form textarea:focus {
   border-color: var(--accent);
   outline: none;
-  background-color: #fffdf5;
+  background-color: var(--fond);
 }
 
 #contact-form .btn {
@@ -282,7 +290,7 @@ footer {
 }
 
 
-
+/* Mise en forme selon médias */
 @media (max-width: 768px) {
   .intro, .search {
     flex: 1 1 100%;

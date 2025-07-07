@@ -8,28 +8,36 @@
 </head>
 <body>
   <header>
-    <h1>La Plume Libre</h1>
-    <p>Votre librairie locale, depuis 1982</p>
+    <div class="header-top">
+      <div class="logo">
+        <img src="/img/icon/plume.png" alt="Logo">
+      </div>
+      <div class="header-text">
+        <h1><a href="index.html" class="site-title">La Plume Libre</a></h1>
+        <p class="slogan">Votre librairie locale, depuis 1982</p>
+      </div>
+      <button class="hamburger" aria-label="Ouvrir le menu">&#9776;</button>
+    </div>
   </header>
 
-  <nav>
+  <nav class="nav-links">
     <a href="index.html">Accueil</a>
     <a href="about.html">À propos</a>
-    <a href="#">Contact</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <main>
-    <section class="intro">
+    <section class="form-section">
       <h2>Contactez-nous</h2>
       <form id="contact-form" novalidate>
         <label for="name">Nom :</label><br />
-        <input type="text" id="name" name="name" required /><br /><br />
+        <input type="text" id="name" name="name" placeholder="Dupond" required /><br /><br />
 
         <label for="email">Email :</label><br />
-        <input type="email" id="email" name="email" required /><br /><br />
+        <input type="email" id="email" name="email" placeholder="abc@mail.fr" required /><br /><br />
 
         <label for="message">Message :</label><br />
-        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+        <textarea id="message" name="message" rows="5" placeholder="Ecrivez votre message ici" required></textarea><br /><br />
 
         <div class="form-button-wrapper">
           <button type="submit" class="btn">Envoyer</button>

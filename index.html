@@ -9,8 +9,10 @@
   <link rel="stylesheet" href="css/style.css">
   <title>La Plume Libre - Accueil</title></a>
 </head>
+
 <body>
-  <header>
+  <!-- Header -->
+  <header>   
     <div class="header-top">
       <div class="logo">
         <img src="/img/icon/plume.png" alt="Logo">
@@ -22,13 +24,13 @@
       <button class="hamburger" aria-label="Ouvrir le menu">&#9776;</button>
     </div>
   </header>
-
+  <!-- Menu -->
   <nav class="nav-links">
     <a href="index.html">Accueil</a>
     <a href="about.html">À propos</a>
     <a href="contact.html">Contact</a>
   </nav>
-
+  <!-- Contenu principal -->
   <main>
     <div class="intro">
       <h2>Bienvenue à la librairie</h2>
@@ -37,12 +39,14 @@
     </div>
     <div class="search">
       <h2>Rechercher un livre</h2>
-      <form id="search-form" novalidate>
+      <form id="search-book" novalidate>
         <input type="text" id="search-input" placeholder="Entrez le titre ou l'auteur" required>
         <button type="submit" class="btn">Rechercher</button>
       </form>
       <p id="search-result" style="color: var(--accent); margin-top: 1rem; display:none;">Aucun résultat trouvé.</p>
     </div>
+
+    <!-- Coups de coeur -->
     <div class="highlights">
       <h2>Nos coups de cœur</h2>
       <div class="book-list">
@@ -75,6 +79,7 @@
     </div>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 La Plume Libre – Tous droits réservés</p>
   </footer>

@@ -22,7 +22,7 @@ body {
   color: var(--texte);
 }
 
-/* Styles pour l'en-tête, la navigation et le contenu principal */
+/* Styles pour l'en-tête */
 header {
   background-color: var(--fond);
   border-bottom: 2px solid var(--accent);
@@ -72,6 +72,7 @@ header h1 {
   color: var(--accent);
 }
 
+/* Style pour le menu */
 nav {
   background-color: var(--accent);
   padding: 0.75rem;
@@ -87,11 +88,15 @@ nav a {
   transition: color 0.2s ease;
 }
 
+nav a.active {
+  border-bottom: 2px solid var(--fond);
+}
+
 nav a:hover {
   color: var(--bouton);
 }
 
-/* Mise en forme du contenu principal */
+/* Style du contenu principal */
 main {
   display: flex;
   flex-direction: row;
@@ -125,6 +130,7 @@ main {
   line-height: 1.6;
 }
 
+/* Recherche de livre */
 .search {
   flex: 1 1 30%;
   max-width: 100%;
@@ -132,7 +138,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   padding: 2rem;
   background-color: var(--secondaire);
 }
@@ -142,7 +147,7 @@ main {
   margin-bottom: 1rem;
 }
 
-#search-form {
+#search-book {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -150,16 +155,17 @@ main {
   justify-content: center;
   margin-bottom: 15px;
 }
-#search-form input[type="text"] {
+#search-input[type="text"] {
   width: 100%;
   max-width: 400px;
-  padding: 10px;
+  padding: 14px 18px;
+  font-size: 1.1rem;
   border: 1px solid var(--bouton);
   border-radius: var(--border-radius);
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
-#search-form button {
+#search-book button {
   background-color: var(--bouton);
   color: white;
   padding: 15px 30px;
@@ -168,10 +174,11 @@ main {
   cursor: pointer;
 }
 
-#search-form button:hover {
+#search-book button:hover {
   background-color: var(--accent);
 }
 
+/* Mise en avant */
 .highlights {
   flex: 1 1 100%;
   max-width: 100%;
@@ -264,7 +271,6 @@ main {
   outline: none;
   text-align: center;
 }
-
 
 .btn:hover {
   background-color: var(--accent);
@@ -398,6 +404,12 @@ footer {
     margin-top: 1.5em;
   }
 
+    .hamburger {
+    display: block;
+    position: relative;
+    z-index: 200;
+  }
+
   .header-top {
     flex-direction: column;
     align-items: center;
@@ -406,12 +418,6 @@ footer {
 
   .header-text {
     align-items: center;
-  }
-
-  .hamburger {
-    display: block;
-    position: relative;
-    z-index: 200;
   }
 
   .intro, .search {

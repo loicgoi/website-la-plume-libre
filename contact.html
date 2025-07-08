@@ -7,12 +7,10 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-  <!-- Header -->
   <header>
     <div class="header-top">
       <div class="logo">
-        <img src="/img/icon/plume.png" alt="Logo">
+        <img src="/img/icon/logo_plume.png" alt="Logo">
       </div>
       <div class="header-text">
         <h1><a href="index.html" class="site-title">La Plume Libre</a></h1>
@@ -22,26 +20,26 @@
     </div>
   </header>
 
-  <!-- Menu -->
   <nav class="nav-links">
     <a href="index.html">Accueil</a>
     <a href="about.html">À propos</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="active">Contact</a>
   </nav>
 
-  <!-- Contenu principal -->
   <main>
     <section class="form-section">
       <h2>Contactez-nous</h2>
       <form id="contact-form" novalidate>
-        <label for="name">Nom :</label><br />
+        <label for="name">* Nom :</label><br />
         <input type="text" id="name" name="name" placeholder="Dupond" required /><br /><br />
 
-        <label for="email">Email :</label><br />
+        <label for="email">* Email :</label><br />
         <input type="email" id="email" name="email" placeholder="abc@mail.fr" required /><br /><br />
 
-        <label for="message">Message :</label><br />
+        <label for="message">* Message :</label><br />
         <textarea id="message" name="message" rows="5" placeholder="Ecrivez votre message ici" required></textarea><br /><br />
+
+        <p id="notice">* Champs obligatoires</p>
 
         <div class="form-button-wrapper">
           <button type="submit" class="btn">Envoyer</button>
@@ -51,7 +49,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 La Plume Libre – Tous droits réservés</p>
   </footer>

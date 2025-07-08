@@ -8,7 +8,7 @@ Ce site vitrine présente l’univers de la librairie, ses coups de cœur litté
 ## 🌐 Aperçu
 
 Accueil du site 
-(img/Vitrine_la_plume_libre.png)
+![Capture d’écran du site](img/Vitrine_la_plume_libre.png)
 
 ---
 

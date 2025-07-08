@@ -25,7 +25,5 @@ Accueil du site
 │   └── script.js             # Script JavaScript (menu responsive, interactions)
 ├── img/
 │   ├── icon/                 # Icônes (ex. logo)
-│   ├── equipe1.jpg           # Photo équipe 1
-│   ├── bookstore.jpg         # Image de la librairie
-│   └── ...                   # Autres images (coups de cœur, team, décor)
+│   └── ...                   # Couvertures de livres (coups de cœur)
 └── README.md                 # Ce fichier
